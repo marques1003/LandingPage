@@ -1,0 +1,178 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    height: 100%;
+}
+
+.sidebar {
+    width: 30%;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #075E54;
+    color: white;
+}
+
+.logo {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.search {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.search input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f1f1f1;
+}
+
+.contacts {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.contact:hover {
+    background-color: #f9f9f9;
+}
+
+.avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.contact-info h3 {
+    margin: 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.contact-info p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.chat {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-bottom: 1px solid #ddd;
+}
+
+.chat-avatar {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.chat-info h2 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.chat-info p {
+    margin: 5px 0 0;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background-color: #d7d7d7;
+}
+
+.message {
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    max-width: 70%;
+    position: relative;
+}
+
+.received {
+    background-color: #fff;
+    align-self: flex-start;
+}
+
+.sent {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+}
+
+.time {
+    font-size: 0.8em;
+    color: #999;
+    position: absolute;
+    bottom: -20px;
+    right: 10px;
+}
+
+.message-input {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+}
+
+.message-input input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: #f1f1f1;
+}
+
+.message-input button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #075E54;
+    color: white;
+    cursor: pointer;
+}
