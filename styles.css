@@ -1,8 +1,11 @@
-/* styles.css */
-body {
+* {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     display: flex;
     height: 100vh;
     background-color: #f0f0f0;
@@ -22,7 +25,7 @@ body {
     flex-direction: column;
 }
 
-.header {
+header {
     display: flex;
     align-items: center;
     padding: 20px;
@@ -35,33 +38,29 @@ body {
     margin-right: 10px;
 }
 
-.search {
+.buscar {
     padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-.search input {
-    width: 100%;
-    padding: 10px;
+    margin: 10px;
     border: none;
     border-radius: 5px;
     background-color: #f1f1f1;
 }
 
-.contacts {
+.contatos {
     flex: 1;
     overflow-y: auto;
 }
 
-.contact {
+.contato {
     display: flex;
     align-items: center;
     padding: 15px;
     border-bottom: 1px solid #ddd;
     cursor: pointer;
+    transition: background-color 0.3s;
 }
 
-.contact:hover {
+.contato:hover {
     background-color: #f9f9f9;
 }
 
@@ -73,13 +72,17 @@ body {
     margin-right: 15px;
 }
 
-.contact-info h3 {
+.info-contato {
+    flex: 1;
+}
+
+.info-contato h3 {
     margin: 0;
     font-size: 1em;
     color: #333;
 }
 
-.contact-info p {
+.info-contato p {
     margin: 5px 0 0;
     font-size: 0.9em;
     color: #777;
@@ -107,26 +110,28 @@ body {
     margin-right: 15px;
 }
 
-.chat-info h2 {
+.info-chat h2 {
     margin: 0;
     font-size: 1.2em;
     color: #333;
 }
 
-.chat-info p {
+.info-chat p {
     margin: 5px 0 0;
     font-size: 0.9em;
     color: #777;
 }
 
-.messages {
+.mensagens {
     flex: 1;
     padding: 20px;
     overflow-y: auto;
-    background-color: #d7d7d7;
+    background-color: #e5ddd5;
+    display: flex;
+    flex-direction: column;
 }
 
-.message {
+.mensagem {
     margin-bottom: 15px;
     padding: 10px;
     border-radius: 5px;
@@ -134,17 +139,17 @@ body {
     position: relative;
 }
 
-.received {
+.recebida {
     background-color: #fff;
     align-self: flex-start;
 }
 
-.sent {
+.enviada {
     background-color: #dcf8c6;
     align-self: flex-end;
 }
 
-.time {
+.hora {
     font-size: 0.8em;
     color: #999;
     position: absolute;
@@ -152,14 +157,14 @@ body {
     right: 10px;
 }
 
-.message-input {
+.entrada-mensagem {
     display: flex;
     padding: 10px;
     border-top: 1px solid #ddd;
     background-color: #fff;
 }
 
-.message-input input {
+.entrada-mensagem input {
     flex: 1;
     padding: 10px;
     border: none;
@@ -168,7 +173,7 @@ body {
     background-color: #f1f1f1;
 }
 
-.message-input button {
+.entrada-mensagem button {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
